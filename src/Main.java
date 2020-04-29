@@ -29,7 +29,6 @@ public class Main {
 
 
         Map<String, String> vocabulary = new HashMap<>();
-        vocabulary.put("QUIT","6");
         vocabulary.put("ENROLLMENT","1");
         vocabulary.put("COMPUTER","2");
         vocabulary.put("EMAIL","3");
@@ -42,7 +41,7 @@ public class Main {
             if (loc ==6){
                 break;
             }
-            Map<String, Integer>exits = chatRoomMap.get(loc).getChats();
+            Map<String, Integer>chats = chatRoomMap.get(loc).getChats();
 
             System.out.println();
 
@@ -56,10 +55,10 @@ public class Main {
                     }
                 }
             }
-            if (exits.containsKey(direction)){
-                loc = exits.get(direction);
+            if (chats.containsKey(direction)){
+                loc = chats.get(direction);
             }else{
-                System.out.println("You can not go in that direction");
+                System.out.println("service is not available");
             }
         }
 
