@@ -14,10 +14,6 @@ public class ChatRoom {
         this.chats.put("2",2);
         this.chats.put("3",3);
         this.chats.put("4",6);
-
-
-
-
     }
 
     public int getIdChatRoom() {

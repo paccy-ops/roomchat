@@ -6,7 +6,9 @@ public class Main {
     private static Map<Integer, ChatRoom> chatRoomMap = new HashMap<>();
 
     public static void main(String[] args) {
+
         Scanner user = new Scanner(System.in);
+
         chatRoomMap.put(0, new ChatRoom(0, "Welcome!, How can help you? \n ENROLLMENT?,SCHOOL FEES......"));
         chatRoomMap.put(1, new ChatRoom(1, "In which course?, we have COMPUTER Engineering, ELECTRONICS Engineering, and CIVIL Engineering"));
 
@@ -21,11 +23,10 @@ public class Main {
         chatRoomMap.get(1).ChangeLocation("1", 1);
 
         chatRoomMap.get(2).ChangeLocation("2",2);
-        chatRoomMap.get(3).ChangeLocation("2",3);
-        chatRoomMap.get(4).ChangeLocation("2",4);
-        chatRoomMap.get(5).ChangeLocation("2",5);
-        chatRoomMap.get(6).ChangeLocation("2",6);
-
+        chatRoomMap.get(3).ChangeLocation("3",3);
+        chatRoomMap.get(4).ChangeLocation("4",4);
+        chatRoomMap.get(5).ChangeLocation("5",5);
+        chatRoomMap.get(6).ChangeLocation("6",6);
 
 
         Map<String, String> vocabulary = new HashMap<>();
@@ -64,7 +65,6 @@ public class Main {
 
     }
 }
-
 
 
 
